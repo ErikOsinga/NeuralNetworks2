@@ -1,0 +1,24 @@
+
+
+The idea is to convert satellite images to street maps.
+
+We should probably start pretty zoomed in, and we can try to see how far we can push it later.
+
+Main thing is that we need a way to download the google maps X and Y images
+
+
+Maybe download this
+https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data
+
+Somehow this is useful
+
+http://maps.google.com/maps/api/staticmap?sensor=false&size=512x512&center=Leiden&zoom=12&style=feature:all|element:labels|visibility:off
+
+And this too
+
+https://developers.google.com/maps/documentation/javascript/examples/map-coordinates
+
+Ok so we can get the satellite images
+http://maps.google.com/maps/api/staticmap?sensor=false&size=512x512&center=Amsterdam&zoom=12&style=feature:all|element:labels|visibility:off&maptype=satellite
+
+

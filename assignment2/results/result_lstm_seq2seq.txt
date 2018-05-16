@@ -1,0 +1,402 @@
+Heel vaak dezelfde zin, das niet zo nice.
+
+
+Input sentence: She runs.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: You lost.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Go inside.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: We all lie.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: That's life.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Tom hurt me.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom may die.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: You've lost.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Find the cat.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: I have a car.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: We all stood.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Even Tom lied.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I'm not blind.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: It's too ugly.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Let Tom drive.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Tom had to go.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't die.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Was Tom there?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: We need money.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: You are drunk!
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: You are drunk!
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: I hate driving.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I love driving.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I'm a free man.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I'm not a poet.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: It's a big job.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: My desk is old.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: She likes wine.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: She's not here.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: That was yours.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: That's logical.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Tom moved away.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Tom won't help.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't lose.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Try this sauce.
+Decoded sentence: Ek sal jou sou wandeer wees nie.
+
+-
+Input sentence: Cats catch mice.
+Decoded sentence: Ek sal jou sou wandeer wees nie.
+
+-
+Input sentence: How could it be?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: I caught a cold.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I have dry skin.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I will join you.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Please trust me.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: She adores cats.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Tom already ate.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Tom got wounded.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom has secrets.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom kept trying.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom looked pale.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom made coffee.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom never cooks.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom ought to go.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom will say no.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: We want it back.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: We're all going.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Hang on a moment.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: He hates spiders.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Hold your horses.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: I didn't hug Tom.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I hate the rules.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I need your help.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I want Tom to go.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I want Tom to go.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I won't be quiet.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I won't kiss Tom.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: I won't kiss Tom.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: It's a good sign.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Music is my life.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: My French is bad.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Please go faster.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: That book's mine.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: That book's mine.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: They all changed.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: This isn't right.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Tom didn't leave.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom didn't leave.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom got up early.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom is trembling.
+Decoded sentence: Ek sal jou sou wandeer wees nie.
+
+-
+Input sentence: Tom is very hurt.
+Decoded sentence: Ek het daar gegaan vir jou oor wees.
+
+-
+Input sentence: Tom let me drive.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom must've died.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom needed to go.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom was captured.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom was captured.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom will be late.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Tom will miss me.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Tom will pay you.
+Decoded sentence: Ek sal dit nie van jy my die werk.
+
+-
+Input sentence: Tom won't change.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't object.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't resign.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't say no.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom won't see me.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom wouldn't cry.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Tom wouldn't eat.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: We have two kids.
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Where's the bank?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Who is this lady?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Who's that woman?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Why is Tom early?
+Decoded sentence: Het jy hierdie sou slek?
+
+-
+Input sentence: Classes end today.
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Could I get a hug?
+Decoded sentence: Ek sal nie jou laan nie terugkom nie.
+
+-
+Input sentence: Do you have a car?
+Decoded sentence: Het jy hierdie sou slek?
+

@@ -1,0 +1,217 @@
+logbook
+
+
+
+We are trying a MLP with the following architecture
+
+batch_size = 1
+epochs = 20
+
+model = Sequential()
+# divide number of inputs by a lot
+model.add(Dense(786432//(2048*8), activation='relu', input_shape=(786432,)))
+# model.add(Dropout(0.2))
+# and then multiplying again
+model.add(Dense(786432, activation='sigmoid'))
+model.compile(loss='mean_squared_error',
+              optimizer=RMSprop(),
+              metrics=['accuracy'])
+
+
+Which is basically a sort of autoencoder?
+
+We accidently put the satellite images as y_train, but the network was already learning to output the gray image with the Google logo at the bottom. 
+--> should put this in the report
+
+
+Should probably try to use binary_crossentropy loss, like in the MNIST example, maybe with optimizer adadelta or adam?
+
+
+We accidently screwed up the train/test split, but still it seemed to learn the general colors.
+
+
+Now, running the network again, expecting no large bugs in the code, we change the batch size to 5,
+
+We inspect the images, and it seems the network outputs the same image for every input image.
+Maybe this is because of the batch size, where it gets multiple images before learning or its because of the loss function, because this is how it minimizes the error?
+
+Batch size to 1 doesn't fix this issue, we will try a new loss function and optimizer.
+
+With adadelta and binary crossentropy the result is a gray image after 20 epochs, with batch_size = 1. 
+Maybe this makes for a slower learning process, so we try an additional 60 epochs after this.
+The network doesn't improve beyond loss: 0.3461 - val_loss: 0.3474
+
+We try to use the ADAM optimizer now, but we think it has to do with the loss function.
+ADAM shows a totally different image, but with about the same loss function. But the image is still a stack of multiple road maps on top of each other.
+
+
+So then in conclusion, it seems that ADAM + binary crossentropy outputs about the same image as RMSProp + mean squared error
+
+So what about ADAM + mean squared error?
+--> got stuck in a local minimum, outputs 1s everywhere --> white image
+--> twice.
+
+
+So what about RMSProp + binary crossentropy?
+Output looks very promising. Saved as batchsize1_epochs_20_RMSProp_BCE
+Upon further inspection, it seems like, again the network is only outputting one single image, but now this time it looks a lot like the first image, but not like the other images.
+Weirdly, it seems like the network learned the first example??
+It's also outputting this example on the test set.
+With 40 epochs in total it seems like it is starting to merge the features again.
+
+Will ask tomorrow why the network would only output the same image every time.
+
+
+We tried adding 0.2 dropout rate after the first layer, but this doesnt seem to help.
+
+
+
+We'll try 500 images now with a batch size of 5, maybe less overfitting? Nope, still same problem..
+
+
+Batch size back to 1, and number of images back to 100, maybe different loss function?
+
+LATER: Maybe try a denoising autoencoder?
+
+
+
+For now, try smaller images, and we will add one zoom increment, 
+so images are now 100x100x3 and with zoom 16, we will probably just see one or zero roads
+Maybe this simple problem is easier to learn? 
+The reasoning behind this was, that now our images have 800,000 dimensions which we are trying to learn with only 100 input images, so if we reduce the dimension size we can also reduce the number of input images, and probably the network will learn?
+
+
+So will try to use 28x28x3 images, and about 10x as much as input size
+
+
+
+Seems downloading the images went wrong starting from 6358...
+which is coincidentally the number we start at.
+But this does seem to get learned by the network.
+
+
+Will try a new approach to download the images, namely downloading images in a defined square,
+which is now bound by the opposite corners, Leiden and Salzburg.
+
+
+Also will split the original 512x512 images we had downloaded at zoom 15 into smaller
+28x28 images, this will probably be faster for downloading data, as it queries the website less.
+And it does not have the Google logo on every image!!
+So we should stop one row earlier when splitting to get rid of the Google Logo.
+Thought: At the same time it could be harder for the network, because some parts of the images
+seem very weird, for example there is buildings in the original satellite image 0
+and then in the roadmap there is water.
+This will affect the cost function a lot in the small images, since water comes out of nowhere in the whole image, but in the large image this is just a small error. I think this will average out though.
+
+Splitting 8900 512x512 images into 324 images makes for 2.8 MILLION IMAGES, totalling only 5.7 GB roundabout.
+
+
+
+
+Probably reducing the dimension too much.. Had output shape of first layer (None,42) (divide by 56). Will divide by 16 now.
+
+Shows promise for the not split images, somehow the split images just look bad. Might also be due to the zoom difference. The not split images show water features for example.
+
+
+
+Will try the not-split images dividing by 8 now.
+
+There is a pretty impressive result at prediction_4750, so I will run this again, but save the model now. Also, this run will go in the archive, under archive/network_1
+
+archive/network1 : 
+- Divide number of inputs by 8
+- Batch size = None
+- Epochs = 5000
+- optimizer=RMSprop(lr=0.001), loss='binary_crossentropy'
+- activation is 'relu' and then 'sigmoid'
+
+
+Running the same model again, but now on 12000 images, will same it under achive/network_2
+
+
+
+
+
+
+Running the 200x200 pixel images CNN now, takes very long,
+meanwhile experimenting with a smaller part of the dataset and architectures
+the simplest CNN architecture with 3 kernels of 5x5 RELU and then again 3 kernels of 5x5 sigmoid already shows some roads in some pictures, but this could also be because it is just showing the satellite images. But after some training it seems to get the gray color right. We wonder if it will ever learn the road colors
+Saved the output under 
+archive/cnn_200_testing1
+
+woops deleted. But will save the output of 400 epochs in that directory then
+
+
+Second try: 
+still 3 kernels in first layer, but now they are size 10x10 
+second layer is the same
+Doesn't change much.
+
+
+
+
+
+The 'deep' neural network model is performing quite well!
+Saved under archive/network_3 
+the model is as follows
+
+batch_size = None
+epochs = 1000
+
+model = Sequential()
+# divide number of inputs by 8
+model.add(Conv2D(8,kernel_size=(5,5),padding='same',activation='relu',input_shape=(200,200,3)))
+
+model.add(Conv2D(16,kernel_size=(5,5),padding='same',activation='relu'))
+
+model.add(Conv2D(32,kernel_size=(5,5),padding='same',activation='relu'))
+
+model.add(Conv2D(16,kernel_size=(5,5),padding='same',activation='relu'))
+
+model.add(Conv2D(8,kernel_size=(5,5),padding='same',activation='relu'))
+
+model.add(Conv2D(3,kernel_size=(5,5),padding='same',activation='sigmoid'))
+
+model.summary()
+
+print ('Required GB of memory:',get_model_memory_usage(batch_size,model))
+
+# model.compile(optimizer=RMSprop(lr=0.001), loss='binary_crossentropy')
+
+model.compile(optimizer='RMSprop',loss='binary_crossentropy')
+
+
+
+Will download 12100 more images, from the UK, about Birmingham to Eastbourne
+
+
+
+
+
+
+Network6 is
+amount_of_examples = int(12000) 
+batch_size = None
+epochs = 500
+
+model = Sequential()
+model.add(Dense(dimensionality//(8), activation='relu', input_shape=(dimensionality,)))
+model.add(Dense(dimensionality, activation='sigmoid'))
+model.summary()
+model.compile(optimizer=RMSprop(lr=0.001), loss='binary_crossentropy')
+# save output image every output_epochs epochs
+output_epochs = 50
+show_callback = show_inputprediction(output_epochs,model,x_train,y_train)
+history = model.fit(x_train, y_train,
+					batch_size=batch_size,
+					epochs=epochs,
+					verbose=1,
+					validation_data=(x_test, y_test),
+					callbacks=[show_callback])
+
+		
+
+
+imgur 200x200
+
+https://imgur.com/a/MHxFBVu
